@@ -3,19 +3,24 @@ import { useCounter } from '../../hooks/useCounter';
 import './counter.css';
 
 export const CounterWithCustomHook = () => {
-    const {state, increment, decrement} = useCounter();
+    const {state, increment, decrement, restablecer} = useCounter();
     return (
         <div>
             <h1>Counter with hook: {state}  </h1>  
             <button 
                 className="btn btn-primary" 
-               
-            > +1 
+                onClick={()=>increment(3)}
+            > incrementar
+            </button>    
+            <button 
+                className="btn btn-success" 
+                onClick={()=>restablecer()}
+            > decrementar 
             </button>    
             <button 
                 className="btn btn-danger" 
-               
-            > -1 
+                onClick={()=>decrement(3)}
+            > decrementar 
             </button>    
         </div>
     )

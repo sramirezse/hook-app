@@ -6,13 +6,15 @@ import Bootstrap from 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css';
 // import { CounterApp } from './components/01-useState/CounterApp';
-import { CounterWithCustomHook } from './components/01-useState/CounterWithCustomHook';
+// import { CounterWithCustomHook } from './components/01-useState/CounterWithCustomHook';
+// import { SimpleForm } from './components/02-useEffect/SimpleForm';
+import { FormWithCustomHook } from './components/02-useEffect/FormWithCustomHook';
 
 
 ReactDOM.render(
     // <HookApp />,
     // <CounterApp />,
-    <CounterWithCustomHook />,
+    <FormWithCustomHook />,
   document.getElementById('root')
 );
 
